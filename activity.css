@@ -1,0 +1,55 @@
+.head{
+    height: 25px;
+    display: flex;
+    background-color: gray;
+}
+.top{
+    height: 65px;
+    display: flex;
+    background-color: lightblue;
+}
+.middle{
+    height: 65px;
+    display: flex;
+    background-color: blue;
+}
+.minibox{
+    height: 20px;
+    display: flex;
+    background-color: lightgreen;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.minibox2{
+    height: 80px;
+    display: flex;
+    background-color: green;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: -100px;
+}
+.box{
+    display: flex;
+}
+.box1{
+    height: 200px;
+    width: 50%;
+    background-color: black;
+}
+.box2{
+    height: 200px;
+    width: 50%;
+    background-color: pink;
+}
+.box3{
+    height: 200px;
+    width: 50%;
+    background-color: black;
+}
+.bottom{
+    height: 200px;
+    display: flex;
+    background-color: orange;
+}

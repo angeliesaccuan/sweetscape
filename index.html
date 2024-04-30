@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetscape</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="ol.png" alt="" style="height: 50px;"></a>
+            <h1 class="logoName">sweetscape</h1>
+        </div>
+        <div class="navbar-container">
+            <nav class="navbar" id="navbar">
+                <a href="#home">Home</a>
+                <a href="#menu">Product</a>
+                <a href="#Gallary">Customize</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div class="icon">
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+    
+        <!-- Wrap the search input in a form element -->
+        <form class="search" id="search-bar">
+            <input type="search" name="search" placeholder="Search...">
+        </form>
+    </header>
+    
+
+<!-- home section start here  -->
+<section class="home" id="home">
+    <div class="homeContent">
+        <h2>Delicious Cookies for Everyone</h2>
+        <p>Sweet Escape in Every Bite!</p>
+        <!-- Add the Order Now button inside the homeContent div -->
+        <div class="home-btn">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Best Seller section start here -->
+<section class="best-seller" id="best-seller">
+    <div class="best-seller-box">
+        <!-- Best seller item 1 -->
+        <div class="best-seller-card">
+            <div class="best-seller-image">
+                <img src="1b.jpg" alt="Best Seller 1">
+            </div>
+            <div class="best-seller-info">
+                <h2>#1</h2>
+                <h3>Red Velvet</h3>
+            </div>
+        </div>
+
+        <!-- Best seller item 2 -->
+        <div class="best-seller-card">
+            <div class="best-seller-image">
+                <img src="2b.jpg" alt="Best Seller 2">
+            </div>
+            <div class="best-seller-info">
+                <h2>#2</h2>
+                <h3>Brown Butter Toffee</h3>
+            </div>
+        </div>
+
+        <!-- Best seller item 3 -->
+        <div class="best-seller-card">
+            <div class="best-seller-image">
+                <img src="3b.jpg" alt="Best Seller 3">
+            </div>
+            <div class="best-seller-info">
+                <h2>#3</h2>
+                <h3>Strawberry Bliss</h3>
+            </div>
+        </div>
+
+        <!-- Best seller item 4 -->
+        <div class="best-seller-card">
+            <div class="best-seller-image">
+                <img src="4b.jpg" alt="Best Seller 4">
+            </div>
+            <div class="best-seller-info">
+                <h2>#4</h2>
+                <h3>Salted Caramel</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Best Seller section -->
+
+   <!-- MENU section start here -->
+<div class="menu" id="menu">
+    <h1>Our Products</h1>
+    <div class="menu_box">
+        <!-- Menu item 1: Pumpkin Snickerdoodle -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Pumpkin Snickerdoodle', 30.00)">
+                <div class="menu_image">
+                    <img src="c1.png" alt="Pumpkin Snickerdoodle">
+                </div>
+                <div class="menu_info">
+                    <h2>Pumpkin Snickerdoodle</h2>
+                    <h3>₱ 30.00</h3>
+                    <input type="hidden" name="item_name" value="Pumpkin Snickerdoodle">
+                    <input type="hidden" name="item_price" value="30.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Menu item 2: Red Velvet Cream Cheese -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Red Velvet Cream Cheese', 30.00)">
+                <div class="menu_image">
+                    <img src="c2.jpg" alt="Red Velvet Cream Cheese">
+                </div>
+                <div class="menu_info">
+                    <h2>Red Velvet</h2>
+                    <h3>₱ 30.00</h3>
+                    <input type="hidden" name="item_name" value="Red Velvet Cream Cheese">
+                    <input type="hidden" name="item_price" value="30.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Menu item 3: Caramel Swirl Chocolate -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Caramel Swirl Chocolate', 50.00)">
+                <div class="menu_image">
+                    <img src="c3.png" alt="Caramel Swirl Chocolate">
+                </div>
+                <div class="menu_info">
+                    <h2>Caramel Swirl Chocolate</h2>
+                    <h3>₱ 50.00</h3>
+                    <input type="hidden" name="item_name" value="Caramel Swirl Chocolate">
+                    <input type="hidden" name="item_price" value="50.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Menu item 4: Salted Caramel -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Salted Caramel', 30.00)">
+                <div class="menu_image">
+                    <img src="c4.png" alt="Salted Caramel">
+                </div>
+                <div class="menu_info">
+                    <h2>Salted Caramel</h2>
+                    <h3>₱ 30.00</h3>
+                    <input type="hidden" name="item_name" value="Salted Caramel">
+                    <input type="hidden" name="item_price" value="30.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Menu item 5: Raspberry Linzer -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Raspberry Linzer', 50.00)">
+                <div class="menu_image">
+                    <img src="c5.png" alt="Raspberry Linzer">
+                </div>
+                <div class="menu_info">
+                    <h2>Raspberry Linzer</h2>
+                    <h3>₱ 50.00</h3>
+                    <input type="hidden" name="item_name" value="Raspberry Linzer">
+                    <input type="hidden" name="item_price" value="50.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Menu item 6: Brown Butter Toffee -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Brown Butter Toffee', 30.00)">
+                <div class="menu_image">
+                    <img src="c6.png" alt="Brown Butter Toffee">
+                </div>
+                <div class="menu_info">
+                    <h2>Brown Butter Toffee</h2>
+                    <h3>₱ 30.00</h3>
+                    <input type="hidden" name="item_name" value="Brown Butter Toffee">
+                    <input type="hidden" name="item_price" value="30.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Menu item 7: Strawberry Bliss -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Strawberry Bliss', 40.00)">
+                <div class="menu_image">
+                    <img src="c7.png" alt="Strawberry Bliss">
+                </div>
+                <div class="menu_info">
+                    <h2>Strawberry Bliss</h2>
+                    <h3>₱ 40.00</h3>
+                    <input type="hidden" name="item_name" value="Strawberry Bliss">
+                    <input type="hidden" name="item_price" value="40.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Menu item 8: Blueberry Choco Bliss -->
+        <div class="menu_card">
+            <form class="order-form" onsubmit="addToCart(event, 'Blueberry Choco Bliss', 50.00)">
+                <div class="menu_image">
+                    <img src="c8.png" alt="Blueberry Choco Bliss">
+                </div>
+                <div class="menu_info">
+                    <h2>Blueberry Choco Bliss</h2>
+                    <h3>₱ 50.00</3>
+                    <input type="hidden" name="item_name" value="Blueberry Choco Bliss">
+                    <input type="hidden" name="item_price" value="50.00">
+                    <!-- Wrap button in a link -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="menu-buy-now-btn">Buy Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End of MENU section -->
+
+    
+<div class="gallary" id="Gallary">
+    <h1>CREATE YOUR OWN PACK</h1>
+    <div class="gallary_image_box">
+        <div class="gallary_image">
+            <img src="1.png" alt="Single Pack">
+            <h2>SINGLE PACK</h2>
+            <h3>₱ 45.00</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="buy-now-link"> <!-- Link to Single Pack -->
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+        </div>
+
+        <div class="gallary_image">
+            <img src="2.png" alt="Double Pack">
+            <h2>DOUBLE PACK</h2>
+            <h3>₱ 95.00</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="buy-now-link"> <!-- Link to Double Pack -->
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+        </div>
+
+        <div class="gallary_image">
+            <img src="3.png" alt="Three Pack">
+            <h2>THREE PACK</h2>
+            <h3>₱ 145.00</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="buy-now-link"> <!-- Link to Three Pack -->
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+        </div>
+
+        <div class="gallary_image">
+            <img src="4.png" alt="Four Pack">
+            <h2>FOUR PACK</h2>
+            <h3>₱ 195.00</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="buy-now-link"> <!-- Link to Four Pack -->
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+        </div>
+
+        <div class="gallary_image">
+            <img src="5.png" alt="Six Pack">
+            <h2>SIX PACK</h2>
+            <h3>₱ 295.00</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="buy-now-link"> <!-- Link to Six Pack -->
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+        </div>
+
+        <div class="gallary_image">
+            <img src="6.png" alt="Eight Pack">
+            <h2>EIGHT PACK</h2>
+            <h3>₱ 395.00</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-erxzfq9W4Dc2_HQP_1X9W42wqkDnslsr8XSIscKq8T7mPg/viewform?usp=sf_link" class="buy-now-link"> <!-- Link to Eight Pack -->
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="about" id="about">
+    <div class="about_main">
+        <div class="about_text">
+            <h1>About Us</h1>
+            <div class="paragraph-box">
+                <p>Welcome to Sweetscape! We craft dreams into every cookie, blending classic favorites and innovative creations with the finest ingredients. Founded in 2023, our journey started in a small kitchen with a passion for baking. Today, we provide more than cookies; we offer a delightful experience that brings people together. With each cookie, we spread happiness and create sweet memories.</p>
+            </div>
+        </div>
+        <div class="video">
+            <!-- Place the video on the right side -->
+            <video width="500" controls autoplay loop muted>
+                <source src="about us.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+        </div>
+    </div>
+</div>
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main" id="contact">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>One Bonifacio High Street by Ayala Malls</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.9159614600987!2d121.0455766383782!3d14.55160229648226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9e4c405839f%3A0x1e6f9ee524ab4ad!2sOne%20Bonifacio%20High%20Street%20by%20Ayala%20Malls!5e0!3m2!1sen!2sph!4v1711686043512!5m2!1sen!2sph" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        
+            
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p><a href="tel:+09054849372">09054849372</a></p> <!-- Link to call the phone number -->
+                <p><a href="mailto:sweetscape@gmail.com">aujscangeliesaccuan@gmail.com</a></p> <!-- Link to send an email -->
+            </div>            
+
+            <div class="footer_tag">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/angeliesaccuanx?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/pootietoe?t=2Wu1Qj1C-zzA3BN3DACUzg&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/pooteitoe?igsh=ZXB0NXhhMjBoNGg4" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+            
+
+        </div>
+
+        <p class="end">Design by Angelie Saccuan </p>
+
+    </footer>
+    
+        <script src="main.js"></script>
+    </body>
+    </html>
+    
