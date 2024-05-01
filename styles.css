@@ -926,22 +926,27 @@ button:hover {
 }
 
 footer {
-    width: 100%;
-    padding: 30px 0 0 20px;
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    padding: 30px 20px; /* Adjust the padding as needed */
     background-color: #6F4E37; /* Background color for the footer */
     color: white; /* Set text color */
+    box-sizing: border-box; /* Include padding in the element's width */
 }
 
 footer .footer_main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Gap between grid items */
+    padding: 0; /* Remove padding if necessary */
+    margin: 0 auto; /* Center the content */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in the element's width */
 }
 
 footer .footer_main .footer_tag {
-    text-align: center;
+    text-align: center; /* Center align content */
+    padding: 10px; /* Add padding for breathing space */
+    margin: 0 auto; /* Center each grid item */
 }
 
 footer .footer_main .footer_tag h2 {
@@ -976,9 +981,11 @@ footer .footer_main .footer_tag i:hover {
 
 footer .end {
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 0;
+    margin: 0 auto;
     border-top: 1px solid white;
     color: white;
+    width: 100%; /* Full width */
 }
 
 @media screen and (max-width: 768px) {
